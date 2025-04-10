@@ -1,0 +1,104 @@
+site_name: My Notes Collection
+site_description: A comprehensive collection of personal notes on cyber security, ethical hacking, and related topics.
+site_url: https://TheMalevolentOne1.github.io/My-Notes-Collection/
+site_author: TheMalevolentOne1
+repo_name: TheMalevolentOne1/My-Notes-Collection
+repo_url: https://github.com/TheMalevolentOne1/My-Notes-Collection
+copyright: Copyright © 2025 Kyle Robinson
+
+theme:
+  name: material
+  features:
+    - navigation.footer
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Dark Mode
+      primary: deep purple
+      accent: purple
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Light Mode
+      primary: light blue
+      accent: teal
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    logo: https://avatars.githubusercontent.com/u/112825149
+  logo: https://avatars.githubusercontent.com/u/112825149
+  favicon: assets/favicon.ico
+
+use_directory_urls: false
+
+nav:
+  - Home: /My-Notes-Collection/#
+  - Cyber-Security: /My-Notes-Collection/Cyber-Security/Cyber Security Contents.html
+  - Study Notes: /My-Notes-Collection/Study Notes/Study Notes Contents.html
+  - Video Notes: /My-Notes-Collection/Video Notes/University Related/Flutter/Flutter Course for Beginners – 37-hour Cross Platform App Development Tutorial.html
+  - Guides: /My-Notes-Collection/Guides/Guides Contents.html
+
+plugins:
+  - search
+  - exclude:
+      glob:
+        - "*.tmp"
+        - "*.bak"
+        - "*.old"
+  - git-revision-date-localized:
+      fallback_to_build_date: true
+  - callouts
+  - mermaid2
+  - roamlinks:
+      enable_transforms: true
+  - minify:
+      minify_html: true
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - attr_list
+  - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - footnotes
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.blocks.caption
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.snippets
+  - nl2br
+
+extra_css:
+  - stylesheets/custom.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/TheMalevolentOne1
+  generator: false
